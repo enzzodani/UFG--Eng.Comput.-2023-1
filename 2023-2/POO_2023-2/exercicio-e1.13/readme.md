@@ -141,9 +141,22 @@ O Diagrama de Classes da UML é uma ferramenta poderosa para modelar a estrutura
 
 ### UML Menor
 
-1. **Ordem:** Ligado a Trabalhador 2 vezes, uma "Emitida-por" e outra "Executada-por"
-2. **Trabalhador:** Ligado a Ordem como descrito, ligado a Garçom com uma Herança e ligado a si próprio com * em uma ponta e 0...1 na outra ponta, essa ligação tem uma observação de "gerente"
-3. **Garçom:** Ligado à Trabalhador como descrito anteriormente
+1. **Ordem:**
+   - Representa uma classe ou objeto chamado "Ordem".
+   - Está associado a "Trabalhador" duas vezes.
+      - "Emitida-por": Indica uma associação em que uma ordem é emitida por um trabalhador.
+      - "Executada-por": Indica uma associação em que uma ordem é executada por um trabalhador.
 
+2. **Trabalhador:**
+   - Representa uma classe ou objeto chamado "Trabalhador".
+   - Está associado a "Ordem" como descrito anteriormente.
+   - Está associado a "Garçom" com uma herança, indicando que "Garçom" herda características ou comportamentos de "Trabalhador".
+   - Está associado a si próprio com uma linha, indicando uma associação reflexiva.
+      - Multiplicidade * em uma ponta indica que um trabalhador pode estar associado a muitos trabalhadores (colegas).
+      - Multiplicidade 0...1 na outra ponta indica que um trabalhador pode ter, no máximo, um trabalhador associado a ele como gerente.
+
+3. **Garçom:**
+   - Representa uma classe ou objeto chamado "Garçom".
+   - Está associado a "Trabalhador" como descrito anteriormente.
 
 **Observação:** Há outros tipos de trabalhadores. Cada um deles herda de Trabalhador
