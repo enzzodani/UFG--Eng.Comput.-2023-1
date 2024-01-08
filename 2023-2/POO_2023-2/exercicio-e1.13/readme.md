@@ -98,46 +98,46 @@ O Diagrama de Classes da UML é uma ferramenta poderosa para modelar a estrutura
    - Possui atributos "quantidade", "devolvido" e "observação".
 
 10. **Pedido:**
-   - Representa uma classe ou objeto chamado "Pedido".
-   - Está associado a "Cliente", "Mesa", "Garçom", "Prato", "Domicílio", "Nota Fiscal" e possivelmente outros elementos.
-   - Está associado a "Telefonista" sem forma específica na ponta do "Telefonista", indicando uma associação direta.
-   - Está associado a "Domicílio" com 0...1 na ponta de "Domicílio" e "destino" como um atributo, sugerindo que um pedido pode estar associado a, no máximo, um endereço de domicílio.
-   - Está associado a "Nota Fiscal" com 1...* na ponta de "Nota Fiscal", indicando que um pedido pode ter uma ou mais notas fiscais associadas.
+       - Representa uma classe ou objeto chamado "Pedido".
+       - Está associado a "Cliente", "Mesa", "Garçom", "Prato", "Domicílio", "Nota Fiscal" e possivelmente outros elementos.
+       - Está associado a "Telefonista" sem forma específica na ponta do "Telefonista", indicando uma associação direta.
+       - Está associado a "Domicílio" com 0...1 na ponta de "Domicílio" e "destino" como um atributo, sugerindo que um pedido pode estar associado a, no máximo, um endereço de domicílio.
+       - Está associado a "Nota Fiscal" com 1...* na ponta de "Nota Fiscal", indicando que um pedido pode ter uma ou mais notas fiscais associadas.
 
 11. **Telefonista:**
-   - Representa uma classe ou objeto chamado "Telefonista".
-   - Está associado a "Pedido" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta do "Pedido" não foi especificada.
+       - Representa uma classe ou objeto chamado "Telefonista".
+       - Está associado a "Pedido" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta do "Pedido" não foi especificada.
 
 12. **Nota Fiscal:**
-   - Representa uma classe ou objeto chamado "Nota Fiscal".
-   - Está associado a "Pedido" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta do "Pedido" não foi especificada.
-   - Está associado a "Pagamento" com um losango vazio na ponta de "Nota Fiscal" e 0...1 na ponta de "Pagamento", indicando que uma nota fiscal pode estar associada a, no máximo, um pagamento.
+       - Representa uma classe ou objeto chamado "Nota Fiscal".
+       - Está associado a "Pedido" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta do "Pedido" não foi especificada.
+       - Está associado a "Pagamento" com um losango vazio na ponta de "Nota Fiscal" e 0...1 na ponta de "Pagamento", indicando que uma nota fiscal pode estar associada a, no máximo, um pagamento.
 
 13. **Pagamento:**
-   - Representa uma classe ou objeto chamado "Pagamento".
-   - Está associado a "Dinheiro", "Cartão Crédito" e "Cheque" com uma seta apontando para "Pagamento", indicando uma possível hierarquia de herança entre essas classes.
+       - Representa uma classe ou objeto chamado "Pagamento".
+       - Está associado a "Dinheiro", "Cartão Crédito" e "Cheque" com uma seta apontando para "Pagamento", indicando uma possível hierarquia de herança entre essas classes.
 
 14. **Dinheiro:**
-   - Mencionado anteriormente como uma forma de pagamento.
+       - Mencionado anteriormente como uma forma de pagamento.
 
 15. **Cartão Crédito:**
-   - Mencionado anteriormente como uma forma de pagamento.
+       - Mencionado anteriormente como uma forma de pagamento.
 
 16. **Cheque:**
-   - Mencionado anteriormente como uma forma de pagamento.
+       - Mencionado anteriormente como uma forma de pagamento.
 
 17. **Domicílio:**
-   - Representa uma classe ou objeto chamado "Domicílio".
-   - Está associado a "Pedido" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta do "Pedido" não foi especificada.
-   - Está associado a "Rota" com um losango vazio na ponta de "Rota".
+       - Representa uma classe ou objeto chamado "Domicílio".
+       - Está associado a "Pedido" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta do "Pedido" não foi especificada.
+       - Está associado a "Rota" com um losango vazio na ponta de "Rota".
 
 18. **Rota:**
-   - Representa uma classe ou objeto chamado "Rota".
-   - Está associado a "Domicílio" com um losango vazio na ponta de "Rota", indicando uma associação agregada ou composição, sugerindo que "Rota" está diretamente relacionado a "Domicílio".
+       - Representa uma classe ou objeto chamado "Rota".
+       - Está associado a "Domicílio" com um losango vazio na ponta de "Rota", indicando uma associação agregada ou composição, sugerindo que "Rota" está diretamente relacionado a "Domicílio".
 
 19. **Entregador:**
-   - Representa uma classe ou objeto chamado "Entregador".
-   - Está associado a "Rota" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta de "Rota" não foi especificada.
+       - Representa uma classe ou objeto chamado "Entregador".
+       - Está associado a "Rota" com uma linha, indicando uma associação direta sem multiplicidade explícita. A forma na ponta de "Rota" não foi especificada.
 
 ### UML Menor
 
